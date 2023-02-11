@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { Element } from 'react-scroll';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+// import Navbar from './components/Navbar/Navbar';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <h1>Website Under Maintenance</h1>
-    </>
-  )
+    <div>
+      {/* <Navbar /> */}
+      <Home />
+      <About />
+      {/* <Events /> */}
+    </div>
+  );
 }
-
-export default App
