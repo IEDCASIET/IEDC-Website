@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Navbar from "../../components/Navbar/Navbar";
 import About from "../About/About";
+import icon from "../../assets/homeicon.png"
 
 export default function Home() {
     const el = useRef(null);
@@ -65,7 +66,9 @@ export default function Home() {
                     <span></span>
                 </div>
             </div>
-            {/* <About/> */}
+            <div className="flex justify-end">
+                    <img src={icon} alt="icon" className="z-10 h-123 w-auto mr-40 mt-20"></img>
+                </div>
         </section>
     );
 }
