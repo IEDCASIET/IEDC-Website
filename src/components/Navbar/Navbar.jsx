@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <nav className="p-4 w-full relative top-0 z-10">
             <div className="container mx-auto flex justify-between items-center">
-                <img src={logo} alt="Logo" className="h-40 w-auto" />
+                <img src={logo} alt="Logo" className="h-20 w-auto" />
                 <ul className="flex space-x-20 text-2xl">
                     <li className="text-black relative">
                         <span className="hover:bg-gradient-to-r hover:from-pink-500 hover:via-white-500 hover:to-blue-500 px-5 py-3 rounded-full hover:text-white">About Us</span>
