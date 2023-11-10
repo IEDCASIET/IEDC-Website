@@ -1,5 +1,6 @@
 import React from 'react';
 import Team from './Team';
+import Card from '../../components/Card/Card';
 import ACL from '../../assets/Excom/Lijo.png'
 import ML from '../../assets/Excom/Alan.png'
 import CIL from '../../assets/Excom/Sanchu.png'
@@ -119,7 +120,7 @@ const reasons = [
     pos: 'Asst. Community Lead',
     image: ACL,
     name: 'Lijo K S',
-    link: '',
+    link: 'https://www.linkedin.com/in/lijo-k-simon-b90388201',
   },
   {
     pos: 'Asst. Community Lead',
@@ -171,6 +172,7 @@ const Excom = () => {
           <Team key={index} {...item} />
         ))}
       </div>
+      <Card />
     </section>
   );
 };
