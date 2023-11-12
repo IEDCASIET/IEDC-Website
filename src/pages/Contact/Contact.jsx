@@ -59,7 +59,7 @@ const Contact = () => {
 };
 
   return (
-    <section id='contact-us' className="bg-white-500 text-black h-screen flex flex-col justify-center mt-120">
+    <section id='contact-us' className="bg-white-500 text-black h-screen flex flex-col justify-center mt-124">
         <div className="text-center">
             <h1 className="text-7xl font-medium inline">Contact</h1>&nbsp;&nbsp;&nbsp;&nbsp;
             <h1 className="text-7xl font-semibold inline">Us</h1>
@@ -137,7 +137,7 @@ const Contact = () => {
         </div>
         <div className="mt-10 ml-40 flex">
           <button
-            className="bg-gradient-to-r from-pink-500 hover:via-white-500 to-blue-500 px-16 py-3 rounded-full text-white text-xl"
+            className="bg-gradient-to-r from-pink-500 to-blue-500 px-16 py-3 rounded-full text-white text-xl"
             type="submit"
           >
             Submit
