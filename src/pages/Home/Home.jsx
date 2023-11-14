@@ -54,7 +54,7 @@ export default function Home() {
 
     return (
         <section>
-            <Navbar/>
+            {/* <Navbar/> */}
             <div className='text-left text-4xl black font-semibold bg-cover bg-no-repeat h-screen absolute inset-0' style={{backgroundImage: `url('src/assets/bgimage.png')`, filter: 'saturate(1)'}}>
                 <div className="text-left text-6xl black font-semibold relative mt-80 ml-40" ref={el}>
                     <span></span>
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="flex justify-end">
-                    <img src={icon} alt="icon" className="z-10 h-123 w-auto mr-40 mt-20"></img>
+                    <img src={icon} alt="icon" className="z-0 h-123 w-auto mr-40 mt-20"></img>
                 </div>
         </section>
     );
