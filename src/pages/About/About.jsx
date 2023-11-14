@@ -3,8 +3,8 @@ import logo from "../../assets/IEDC ASIET Logo.png";
 
 const About = () => {
   return (
-    <section id="about-us" className="bg-white-500 text-black h-screen flex flex-col justify-center mt-60">
-        <div className="text-center mb-4">
+    <section id="about-us" className="bg-white-500 text-black h-screen flex flex-col justify-center">
+        <div className="text-center mt-40">
             <h1 className="text-7xl font-medium inline">About</h1>&nbsp;&nbsp;
             <h1 className="text-7xl font-semibold inline">Us</h1>
         </div>
