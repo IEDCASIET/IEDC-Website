@@ -5,8 +5,8 @@
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: contain;
   width: auto;
   height: auto;
 }

@@ -8,9 +8,9 @@ import './Events.css';
 import Data from './Data';
 
 const images = [
-  { name: 'Nature 1', url: 'https://live.staticflickr.com/65535/53325148749_b3999fd2b8_b.jpg' },
-  { name: 'Nature 2', url: 'https://live.staticflickr.com/65535/53325148749_b3999fd2b8_b.jpg' },
-  { name: 'Nature 3', url: 'https://live.staticflickr.com/65535/53325148749_b3999fd2b8_b.jpg' },
+  { url: 'https://live.staticflickr.com/65535/53341447953_a6ebda77b4_k.jpg' },
+  { url: 'https://live.staticflickr.com/65535/53341554749_a5be940d8f_k.jpg' },
+  { url: 'https://live.staticflickr.com/65535/53341554784_aaf6b35f30_k.jpg' },
 ];
 
 export default function Events() {
@@ -26,46 +26,43 @@ export default function Events() {
   };
 
   return (
-    <section id="our-events" className="bg-white-500 text-black h-screen flex flex-col justify-center relative">
-      <div className="text-center mb-4">
+    <section id="our-events" className="bg-white-500 text-black h-auto flex flex-col justify-center relative">
+      <div className="text-center mt-40">
         <h1 className="text-7xl font-medium inline">Our</h1>&nbsp;&nbsp;&nbsp;&nbsp;
         <h1 className="text-7xl font-semibold inline">Events</h1>
       </div>
       <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 1000,
-          modifier: 1,
-          slideShadows: false,
+        slidesPerView={3}
+        // centeredSlides={true}
+        spaceBetween={0}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
+        pagination={{
+          clickable: true,
         }}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-          stopOnLastSlide: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
-        speed={800}
+        modules={[Pagination]}
         className="mySwiper"
-        onSlideChange={handleSlideChange}
-        onAutoplayStop={handleAutoplayStop}
       >
-        {images.map(({ name, url }, index) => (
-          <SwiperSlide key={index} className={`swiper ${index === images.length - 1 && showViewMore ? 'blur' : ''}`}>
-            <img className="swiper-slide" src={url} alt={name} />
-          </SwiperSlide>
+        {images.map(({url }, index) => (
+          <SwiperSlide key={index} className="swiper">
+            <div className='p-8'>
+      <img className="swiper-slide object-cover w-full h-full" src={url} />
+      </div>
+    </SwiperSlide>
         ))}
-      </Swiper>
-      {showViewMore && (
-        <button className="bg-gradient-to-r from-pink-600 to-blue-600 px-16 py-3 rounded-full text-white text-xl p-3 w-35 h-25 mt-4 absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" onClick={() => console.log('View More')}>
-          View More
-        </button>
-      )}
+      </Swiper> 
+      {/* {showViewMore && ( */}
+      <div className='relative ml-[11rem]'>
+      <button
+        className="bg-gradient-to-r from-pink-600 to-blue-600 px-10 py-3 rounded-full text-white text-xl relative transform -translate-x-1/2 -translate-y-1/2 block mx-auto mt-8"
+        onClick={() => console.log('View More')}
+      >
+        View More
+      </button>
+        </div>
+      {/* )} */}
     </section>
   );
 }
