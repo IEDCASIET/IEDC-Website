@@ -59,48 +59,33 @@ const Footer = () => {
     <div className=''></div>
     <div className="ml-97 mb-0">
         <h2 className='text-3xl text-black font-semibold mb-4' style={{ fontFamily: 'url("src/assets/Fonts/Ubuntu-Regular.ttf")' }}>
-            Quick Links
+            External Links
         </h2>
         <ul className="list-disc pl-4 text-gray-700 text-lg">
-            <li className='mb-2' 
-                onClick={() => {
-                const aboutUsSection = document.getElementById('about-us');
-                aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-            }}
-            style={{ cursor: 'pointer' }}
-            >
-                About Us
+            <li className='mb-2'>
+                <a href="https://startupmission.kerala.gov.in/">Kerala Startup Mission</a>
             </li>
-            <li className='mb-2'
-                onClick={() => {
-                const aboutUsSection = document.getElementById('our-events');
-                aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-            }}
-            style={{ cursor: 'pointer' }}
-            >
-                Events
+            <li className='mb-2'>
+                <a href="https://industry.kerala.gov.in/">Directorate of Industries and Commerce, Kerala</a>
             </li>
-            <li className='mb-2'
+            <li className='mb-2'>
+                <a href="https://iedc.startupmission.in/">Innovation and Entrepreneurship Development Centre</a>
+            </li>
+            <li className='mb-2'>
+                <a href="https://www.startupindia.gov.in/">Startup India - Government Of India</a>
+            </li>
+            {/* <li className='mb-2'
             onClick={() => {
-                const aboutUsSection = document.getElementById('our-execom');
-                aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-            }}
-            style={{ cursor: 'pointer' }}
-            >
-                Execom
-            </li>
-            <li className='mb-2'
-            onClick={() => {
-                const aboutUsSection = document.getElementById('contact-us');
-                aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+                const contactSection = document.getElementById('contact-us');
+                contactSection.scrollIntoView({ behavior: 'smooth' });
             }}
             style={{ cursor: 'pointer' }}
             >
                 Contact Us
-            </li>
+            </li> */}
         </ul>
     </div>
-    <div className="map-container ml-80 mt-10">
+    <div className="map-container ml-40 mt-10">
         <iframe
             width="350"
             height="250"
