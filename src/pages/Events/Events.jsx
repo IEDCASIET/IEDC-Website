@@ -1,68 +1,46 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
-import './Events.css';
-import Data from './Data';
+import React, { useEffect } from "react";
+// import Navbar from "../../components/Navbar/Navbar";
+import EventsNav from "../../components/Navbar/EventsNavbar";
+import Footer from "../../components/Footer/Footer";
+import images from "./Data";
 
-const images = [
-  { url: 'https://live.staticflickr.com/65535/53341447953_a6ebda77b4_k.jpg' },
-  { url: 'https://live.staticflickr.com/65535/53341554749_a5be940d8f_k.jpg' },
-  { url: 'https://live.staticflickr.com/65535/53341554784_aaf6b35f30_k.jpg' },
-];
-
-export default function Events() {
-  const [showViewMore, setShowViewMore] = useState(false);
-
-  const handleSlideChange = (swiper) => {
-    const isLastSlide = swiper.isEnd;
-    setShowViewMore(isLastSlide);
-  };
-
-  const handleAutoplayStop = () => {
-    setShowViewMore(true);
-  };
+const EventsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <section id="our-events" className="bg-white-500 text-black h-auto flex flex-col justify-center relative">
-      <div className="text-center mt-40">
-        <h1 className="text-7xl font-medium inline">Our</h1>&nbsp;&nbsp;&nbsp;&nbsp;
-        <h1 className="text-7xl font-semibold inline">Events</h1>
-      </div>
-      <Swiper
-        slidesPerView={3}
-        // centeredSlides={true}
-        spaceBetween={0}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        {images.map(({url }, index) => (
-          <SwiperSlide key={index} className="swiper">
-            <div className='p-8'>
-      <img className="swiper-slide object-cover w-full h-full" src={url} />
-      </div>
-    </SwiperSlide>
-        ))}
-      </Swiper> 
-      {/* {showViewMore && ( */}
-      <div className='relative ml-[11rem]'>
-      <button
-        className="bg-gradient-to-r from-pink-600 to-blue-600 px-10 py-3 rounded-full text-white text-xl relative transform -translate-x-1/2 -translate-y-1/2 block mx-auto mt-8"
-        onClick={() => console.log('View More')}
-      >
-        View More
-      </button>
+    <section id="data">
+      {/* <Navbar /> */}
+      <EventsNav />
+      <div className="text-center mt-0">
+            <h1 className="text-7xl font-medium inline">Our</h1>&nbsp;&nbsp;&nbsp;&nbsp;
+            <h1 className="text-7xl font-semibold inline">Events</h1>
         </div>
-      {/* )} */}
+      <div className="flex flex-wrap justify-center gap-20 p-20 mx-auto">
+        {images.map((image, index) => (
+          <div key={index} className="relative">
+            <img
+              className="rounded-lg overflow-hidden shadow-lg w-84 h-84"
+              src={image.url}
+              alt={`Event ${index + 1}`}
+            />
+
+          </div>
+        ))}
+      </div>
+      <Footer />
     </section>
   );
-}
+};
+
+export default EventsPage;
+
+{/* <div
+        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+    </div> */}
+
+    // <div className="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+    //     <span className="font-bold">{image.date}</span>
+    //     <small>{image.month}</small>
+    // </div>
