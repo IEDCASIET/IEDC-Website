@@ -7,7 +7,7 @@ import cup from '../../assets/cup.png'
 
 const Card = () => {
   return (
-    <div className="bg-blue-400 w-auto h-40 py-4 bg-gradient-to-r from-pink-500 to-blue-500 text-white text-xl flex items-center">
+    <div className="bg-blue-400 h-40 py-4 bg-gradient-to-r from-pink-500 to-blue-500 text-white text-xl flex items-center">
     <img src={cup} alt='cup' className='h-24 ml-[12.5rem]' />
     <div className="ml-2">
         <p className='text-6xl text-white mb-2' style={{ fontFamily: 'Arial, sans-serif' }}>10+</p>
