@@ -27,13 +27,13 @@ import TL from '../../assets/Excom/Alvin.png'
 
 const reasons = [
   {
-    pos: 'Nodel Officer',
+    pos: 'Nodal Officer',
     image: NO,
     name: 'Prof. Eldhose P Sim',
     link: 'https://www.linkedin.com/in/eldhose-p-sim',
   },
   {
-    pos: 'Asst. Nodel Officer',
+    pos: 'Asst. Nodal Officer',
     image: ANO,
     name: 'Dr. Rahul Krishnan',
     link: 'https://www.linkedin.com/in/dr-rahul-krishnan-a32699a5',
@@ -90,7 +90,7 @@ const reasons = [
     pos: 'Asst. Finance Lead',
     image: AFL,
     name: 'Aparna Prasad',
-    link: '',
+    link: ' https://www.linkedin.com/in/aparna-prasad-3075b42a3',
   },
   {
     pos: 'Creative and Innovation Lead',
@@ -173,7 +173,7 @@ const Excom = () => {
           <Team key={index} {...item} />
         ))}
       </div>
-      <Card />
+      {/* <Card /> */}
     </section>
   );
 };
