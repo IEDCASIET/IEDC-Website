@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Navbar from "../../components/Navbar/Navbar";
-import About from "../About/About";
 import icon from "../../assets/homeicon.png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/effect-fade';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import image from './HomeData'
 
 export default function Home() {
     const el = useRef(null);
@@ -53,9 +56,9 @@ export default function Home() {
     }, []);
 
     return (
-        <section>
+        <section className=" h-[80vh]">
             {/* <Navbar/> */}
-            <div className='text-left text-4xl black font-semibold bg-cover bg-no-repeat h-screen absolute inset-0' style={{backgroundImage: `url('src/assets/bgimage.png')`, filter: 'saturate(1)'}}>
+            <div className='text-left text-4xl black font-semibold bg-cover bg-no-repeat absolute inset-0' style={{backgroundImage: `url('src/assets/bgimage.png')`, filter: 'saturate(1)', width:'100vw'}}>
                 <div className="text-left text-6xl black font-semibold relative mt-80 ml-40" ref={el}>
                     <span></span>
                 </div>
@@ -66,8 +69,55 @@ export default function Home() {
                     <span></span>
                 </div>
             </div>
-            <div className="flex justify-end">
-                    <img src={icon} alt="icon" className="z-0 h-123 w-auto mr-40 mt-20"></img>
+            <div className="flex justify-end ">
+                    {/* <img src={icon} alt="icon" className="z-0 h-123 w-auto mr-40 mt-20"></img> */}
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        effect={'fade'}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: true,
+                          }}
+                        pagination={{
+                        clickable: false,
+                        renderBullet: function () {
+                            return " ";
+                            },
+                        }}
+                        navigation={false}
+                        modules={[Pagination, EffectFade, Autoplay]}
+                        // className="mySwiper"
+                    >
+                     {image.map((im, index) => (
+                        <SwiperSlide>
+                            <div
+                                style={{
+                                width: '800px',
+                                height: '550px',
+                                marginLeft: '58rem',
+                                marginTop: '3.5rem',
+                                borderRadius: '20px',
+                                overflow: 'hidden',
+                                // position: 'relative',
+                                aspectRatio:10,
+                                }}
+                            >
+                                <img
+                                style={{
+                                    display: 'block',
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'auto',
+                                }}
+                                src={im.url}
+                                alt={`Event ${index + 1}`}
+                                />
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                    </Swiper>
                 </div>
         </section>
     );
