@@ -1,47 +1,13 @@
 import React from 'react';
 import logo1 from "../../assets/IEDC ASIET Logo.png";
 import locImg from "../../assets/location.png";
-import fb from "../../assets/fb.png"
-import insta from "../../assets/insta.png"
-import ld from "../../assets/in.png"
-import yt from "../../assets/you.png"
-
+import FooterCard from "./FooterCard";
 
 const Footer = () => {
   return (
     <section className="bg-white-500 text-black h-auto flex flex-col justify-center mt-10">
-    <div className="bg-blue-400 w-auto h-28 p-6">
-        <h2 className='text-4xl text-white ml-20' style={{fontFamily: 'url("src/assets/Fonts/Ubuntu-Bold.ttf")', fontWeight: 'bold'}}>
-            Ready To Make
-        </h2>
-        <h2 className='text-4xl text-white ml-20 inline-block' style={{fontFamily: 'url("src/assets/Fonts/Ubuntu-Bold.ttf")', fontWeight: 'bold'}}>
-            IEDC ASIET Support For You?
-        </h2>
-        <button
-            className="bg-white absolute px-8 py-2 rounded-full text-black text-xl ml-60 -mt-6"
-            onClick={() => {
-                const aboutUsSection = document.getElementById('contact-us');
-                aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-            }}
-            style={{ cursor: 'pointer' }}
-          >
-            Get Started
-        </button>
-        {/* <div className=" ml-4"> */}
-        <a href='https://www.facebook.com/asietbootcamp' target="_blank" rel="noreferrer">
-            <img src={fb} alt='fb' className=' absolute h-16 right-0 mr-120 -mt-20' />
-        </a>
-        <a href='https://www.instagram.com/asiet_iedc' target="_blank" rel="noreferrer">
-            <img src={insta} alt='insta' className=' absolute h-16 right-0 mr-[22rem] -mt-20' />        
-        </a>
-        <a href='https://www.youtube.com/@adishankaraiedcbootcampasi7376' target="_blank" rel="noreferrer">
-            <img src={yt} alt='yt' className=' absolute h-16 right-0 mr-[14rem] -mt-20' />
-        </a>
-        <a href='https://www.linkedin.com/company/iedc-asiet' target="_blank" rel="noreferrer">
-            <img src={ld} alt='in' className=' absolute h-16 right-0 mr-[6rem] -mt-20' />
-        </a>
-    {/* </div> */}
-    </div>
+    <FooterCard />
+
 <div className='relative flex items-center'>
 <img src={logo1} alt="Logo" className="h-40 w-auto ml-60 mb-10" />
     <div className='absolute mt-60 ml-40'>
@@ -56,8 +22,8 @@ const Footer = () => {
         </p>
         {/* </div> */}
     </div>
-    <div className=''></div>
-    <div className="ml-97 mb-0">
+    {/* <div className=''></div> */}
+    <div className=" ml-97 mb-0">
         <h2 className='text-3xl text-black font-semibold mb-4' style={{ fontFamily: 'url("src/assets/Fonts/Ubuntu-Regular.ttf")' }}>
             External Links
         </h2>
@@ -85,7 +51,7 @@ const Footer = () => {
             </li> */}
         </ul>
     </div>
-    <div className="map-container ml-40 mt-10">
+    <div className="map-container ml-20 xl:ml-40 lg:ml-20 mt-10">
         <iframe
             width="350"
             height="250"
