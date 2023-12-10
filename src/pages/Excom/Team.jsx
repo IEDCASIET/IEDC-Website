@@ -17,7 +17,7 @@ return (
 >
   <div className="profileImage absolute -top-40 w-40 h-40" style={profileImage}></div>
   <div className="card-text text-center mt-2 flex flex-col">
-      <h2 className="font-bold text-black text-xl mb-2" style={{ fontFamily: "src/assets/Fonts/Ubuntu-Light.ttf" }}>{name}</h2>
+      <h2 className="font-bold text-black text-xl mb-2" style={{ fontFamily: "src/assets/Fonts/Ubuntu-Light.ttf", fontSize:'1.28rem' }}>{name}</h2>
       <p className="text-grey-800 text-lg" style={{ fontFamily: "Poppins-Medium" }}>{pos}</p>
       <div className="flex justify-center items-center">
         <a href={link} target="_blank" rel="noreferrer" className="text-blue-600 text-4xl mt-2 mb-2">
