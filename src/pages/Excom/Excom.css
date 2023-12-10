@@ -1,0 +1,11 @@
+@media screen and (max-width: 480px) {
+    .execom-text h1 {
+        font-size:4rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .execom-text h1 {
+        font-size:4rem !important;
+    }
+}

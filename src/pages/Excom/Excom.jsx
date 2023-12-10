@@ -1,5 +1,6 @@
 import React from 'react';
 import Team from './Team';
+import './Excom.css'
 import Card from '../../components/Card/Card';
 import ACL from '../../assets/Excom/Lijo.png'
 import ML from '../../assets/Excom/Alan.png'
@@ -163,11 +164,12 @@ const reasons = [
 const Excom = () => {
   return (
     <section id='our-execom' className="bg-white-500 text-black h-auto flex flex-col justify-center">
-      <div className="text-center mt-32">
+      <div className="execom-text text-center mt-32">
         <h1 className="text-7xl font-medium inline">Our</h1>&nbsp;&nbsp;&nbsp;&nbsp;
         <h1 className="text-7xl font-semibold inline">Execom</h1>
       </div>
-      <div className="p-20 mx-auto flex flex-wrap justify-center gap-20">
+      <div className="p-20 flex flex-wrap justify-center gap-20">
+        {/* mx-auto commented */}
       {/* <!-- <div class="p-20 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-20"></div> --> */}
         {reasons.map((item, index) => (
           <Team key={index} {...item} />
