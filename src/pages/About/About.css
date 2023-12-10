@@ -46,19 +46,19 @@
     .about-2 {
         flex-direction: column !important;
         margin-top: 4rem;
-        margin-left:4rem;
+        /* margin-left:4rem; */
     }
 
     .about-2 h2 {
-        font-size:2.5rem !important;
+        font-size:2rem !important;
     }
     
     .about-text {
-        margin-left:4rem;
+        /* margin-left:4rem; */
     }
 
     .about-text h1 {
-        font-size:4rem !important;
+        font-size:3.5rem !important;
     }
 
     .logo {
@@ -92,11 +92,11 @@
     }
     
     .about-2 h2 {
-        font-size:2.5rem !important;
+        font-size:2rem !important;
     }
 
     .about-text h1 {
-        font-size:4rem !important;
+        font-size:3rem !important;
     }
 
     .logo {
