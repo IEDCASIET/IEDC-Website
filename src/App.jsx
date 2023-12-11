@@ -11,8 +11,8 @@ import CompanyCard from './components/Company/Company';
 export default function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-       {/* <Home /> */}
+      <Navbar />
+       <Home />
        <About />
        {/* <CompanyCard /> */}
        {/* <Events /> */}
