@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Navbar from "../../components/Navbar/Navbar";
-import icon from "../../assets/homeicon.png"
+import './Home.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/effect-fade';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
@@ -56,20 +56,22 @@ export default function Home() {
     }, []);
 
     return (
-        <section className=" h-[80vh]">
+        <section className=" h-[90vh] home">
             {/* <Navbar/> */}
-            <div className='text-left text-4xl black font-semibold bg-cover bg-no-repeat absolute inset-0' style={{backgroundImage: `url('src/assets/bgimage.png')`, filter: 'saturate(1)', width:'100vw'}}>
-                <div className="text-left text-6xl black font-semibold relative mt-80 ml-40" ref={el}>
+            <div className='homebg text-left text-4xl black font-semibold bg-contain bg-no-repeat absolute inset-0' style={{backgroundImage: `url('src/assets/bgimage.png')`, filter: 'saturate(1)', width:'100vw'}}>
+            <div className="hometextdisplay">
+                <div className="hometextdisplay-1 text-left text-6xl black font-semibold relative mt-80 ml-40" ref={el}>
                     <span></span>
                 </div>
-                <div className="text-left text-6xl black font-semibold relative mt-6 ml-84" ref={el2}>
+                <div className="hometextdisplay-2 text-left text-6xl black font-semibold relative mt-6 ml-84" ref={el2}>
                     <span></span>
                 </div>
-                <div className="text-left text-6xl black font-semibold relative mt-6 ml-72" ref={el3}>
+                <div className="hometextdisplay-3 text-left text-6xl black font-semibold relative mt-6 ml-72" ref={el3}>
                     <span></span>
                 </div>
             </div>
-            <div className="flex justify-end ">
+            </div>
+            <div>
                     {/* <img src={icon} alt="icon" className="z-0 h-123 w-auto mr-40 mt-20"></img> */}
                     <Swiper
                         slidesPerView={1}
@@ -97,12 +99,13 @@ export default function Home() {
                                 width: '800px',
                                 height: '550px',
                                 marginLeft: '58rem',
-                                marginTop: '3.5rem',
+                                marginTop: '8rem',
                                 borderRadius: '20px',
                                 overflow: 'hidden',
-                                // position: 'relative',
+                                position: 'relative',
                                 aspectRatio:10,
                                 }}
+                                className="homeslider"
                             >
                                 <img
                                 style={{
