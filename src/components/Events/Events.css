@@ -1,17 +1,31 @@
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+@media screen and (max-width: 768px) {
+  .eventsbutton{
+    left:5rem
+  }
 }
 
-.swiper-slide {
-  background-position: right;
-  background-size: contain;
-  width: auto;
-  height: auto;
+@media screen and (max-width: 480px) {
+  .events-text h1 {
+    font-size:3rem !important;
+  }
+
+  .eventsbutton{
+    left:5.75rem
+  }
+
+  .home-events-image {
+    width:300px !important;
+    height:300px !important;
+  }
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
+@media screen and (max-width: 320px) {
+  .events-text h1 {
+    font-size:3rem !important;
+  }
+
+  .home-events-image {
+    width:200px !important;
+    height:200px !important;
+  }
 }

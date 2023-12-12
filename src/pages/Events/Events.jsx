@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import EventsNav from "../../components/Navbar/EventsNavbar";
 import Footer from "../../components/Footer/Footer";
 import images from "./Data";
+import './Events.css';
 
 const EventsPage = () => {
   useEffect(() => {
@@ -13,15 +14,15 @@ const EventsPage = () => {
     <section id="data">
       {/* <Navbar /> */}
       <EventsNav />
-      <div className="text-center mt-0">
+      <div className="events-page-text text-center mt-0">
             <h1 className="text-7xl font-medium inline">Our</h1>&nbsp;&nbsp;&nbsp;&nbsp;
             <h1 className="text-7xl font-semibold inline">Events</h1>
         </div>
-      <div className="flex flex-wrap justify-center gap-20 p-20 mx-auto">
+      <div className="flex flex-wrap justify-center gap-20 p-10 mx-auto">
         {images.map((image, index) => (
           <div key={index} className="relative">
             <img
-              className="rounded-lg overflow-hidden shadow-lg w-84 h-84"
+              className="events-images rounded-lg overflow-hidden shadow-lg w-84 h-84"
               src={image.url}
               alt={`Event ${index + 1}`}
             />
@@ -29,7 +30,7 @@ const EventsPage = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 };

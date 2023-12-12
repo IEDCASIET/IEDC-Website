@@ -1,0 +1,25 @@
+@media screen and (max-width: 480px) {
+    .events-page-text h1 {
+        font-size:3rem !important;
+    }
+
+    .events-images {
+        width:300px !important;
+        height:300px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .events-page-text h1 {
+        font-size:3rem !important;
+    }
+
+    .events-text h1 {
+        font-size:3rem !important;
+    }
+
+    .events-images {
+        width:200px !important;
+        height:150px !important;
+    }
+}
