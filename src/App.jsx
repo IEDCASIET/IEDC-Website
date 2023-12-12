@@ -15,7 +15,7 @@ export default function App() {
        <Home />
        <About />
        {/* <CompanyCard /> */}
-       {/* <Events /> */}
+       <Events />
        <Excom />
        {/* <Contact /> */}
       {/* <Footer /> */}
