@@ -54,7 +54,7 @@ export default function Navbar() {
                             Events
                         </span>
                     </li>
-                    {/* <li className="text-black relative">
+                    <li className="text-black relative">
                         <a href="/gallery">
                             <span
                                 className="hover:bg-gradient-to-r hover:from-pink-500 hover:via-white-500 hover:to-blue-500 px-5 py-3 rounded-full hover:text-white"
@@ -63,7 +63,7 @@ export default function Navbar() {
                                 Gallery
                             </span>
                         </a>
-                    </li> */}
+                    </li>
                     <li className="text-black relative top-0">
                         <span
                             className="hover:bg-gradient-to-r hover:from-pink-500 hover:via-white-500 hover:to-blue-500 px-5 py-3 rounded-full hover:text-white"
