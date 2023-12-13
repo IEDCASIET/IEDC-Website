@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+    .text-gallery h1 {
+        font-size:3rem !important;
+    }
+
+    .gallery-images {
+        width:300px !important;
+        height:200px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-gallery h1 {
+        font-size:3rem !important;
+    }
+
+    .gallery-images {
+        width:200px !important;
+        height:200px !important;
+    }
+}
