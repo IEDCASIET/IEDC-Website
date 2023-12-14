@@ -1,0 +1,70 @@
+@media screen and (max-width: 480px) {
+    .text-contactus h1 {
+        font-size:3rem !important;
+    }
+
+    .contact-rectangle {
+        min-margin-left:1.5rem !important;
+        max-height:600px !important;
+        max-width:320px !important;
+    }
+
+    .input-username-div {
+        margin-left:0.75rem !important;
+    }
+
+    .input-username {
+        width:15rem !important;
+    }
+
+    .input-useremail-div {
+        margin-left:0.75rem !important;
+    }
+
+    .input-useremail {
+        width:15rem !important;
+    }
+
+    .input-usermsg-div {
+        margin-left:0.75rem !important;
+    }
+
+    .input-usermsg {
+        width:15rem !important;
+    }
+
+    .contactus-submit-button {
+        margin-left:2.25rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-contactus h1 {
+        font-size:3rem !important;
+    }
+
+    .contact-rectangle {
+        min-margin-left:1.5rem !important;
+        max-height:500px !important;
+        max-width:280px !important;
+    }
+
+    .input-username-div ,
+    .input-useremail-div, 
+    .input-usermsg-div {
+        margin-left:0rem !important;
+    }
+
+    .contactus-submit-button {
+        margin-left:3rem !important;
+        margin-top:1rem !important;
+    }
+
+    .contactus-submit-button button {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+
+}

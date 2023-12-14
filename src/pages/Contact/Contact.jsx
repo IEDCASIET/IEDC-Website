@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import './Contact.css';
 
 const Contact = () => {
 
@@ -59,20 +60,20 @@ const Contact = () => {
 };
 
   return (
-    <section id='contact-us' className="bg-white-500 text-black h-screen flex flex-col justify-center mt-10">
-        <div className="text-center">
+    <section id='contact-us' className="bg-white-500 text-black sm:h-screen h-auto flex flex-col justify-center mt-10">
+        <div className="text-contactus text-center sm:mt-0 mt-32">
             <h1 className="text-7xl font-medium inline">Contact</h1>&nbsp;&nbsp;&nbsp;&nbsp;
             <h1 className="text-7xl font-semibold inline">Us</h1>
         </div>
         <form
         ref={form}
         onSubmit={sendEmail}
-        className="md:min-w-[1050px] md:min-h-[600px] max-w-auto mx-auto bg-white p-6 rounded-3xl shadow-lg mt-20"
+        className="contact-rectangle lg:min-w-[1025px] lg:min-h-[600px] md:min-w-[850px] md:min-h-[500px] sm:min-w-[700px] sm:min-h-[350px] max-w-auto mx-auto bg-white p-6 rounded-3xl shadow-lg mt-20"
         style={{ ...bgcontactimg, borderRadius: '5.5rem', boxShadow: "-5px 5px 20px rgba(255, 105, 180, 0.8), 5px 5px 20px rgba(255, 105, 185, 0.8)" }}
         >
-        <div className="relative ml-20 mt-16">
+        <div className="input-username-div relative ml-20 mt-16">
         <input
-            className="shadow appearance-none border rounded-full w-84 py-4 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="input-username shadow appearance-none border rounded-full w-84 py-4 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             style={{
                 boxShadow: "-5px 5px 20px rgba(255, 105, 180, 0.5), 5px 5px 20px rgba(255, 105, 185, 0.5)"
             }}
@@ -92,9 +93,9 @@ const Contact = () => {
             Name
           </label>
         </div>
-        <div className="relative ml-20 mt-8">
+        <div className="input-useremail-div relative ml-20 mt-8">
           <input
-            className="shadow appearance-none border rounded-full w-84 py-4 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="input-useremail shadow appearance-none border rounded-full w-84 py-4 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             style={{
                 boxShadow: "-5px 5px 20px rgba(255, 105, 180, 0.5), 5px 5px 20px rgba(255, 105, 185, 0.5)"
             }}
@@ -114,9 +115,9 @@ const Contact = () => {
             Email
           </label>
         </div>
-        <div className="mt-8 ml-20 relative">
+        <div className="input-useremail-div mt-8 ml-20 relative">
             <textarea
-                className="shadow appearance-none border rounded-3xl w-84 h-40 py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="input-usermsg shadow appearance-none border rounded-3xl w-84 h-40 py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 style={{
                     boxShadow: "-5px 5px 20px rgba(255, 105, 180, 0.5), 5px 5px 20px rgba(255, 105, 185, 0.5)"
                 }}
@@ -135,7 +136,7 @@ const Contact = () => {
                 Message
             </label>
         </div>
-        <div className="mt-10 ml-40 flex">
+        <div className="contactus-submit-button mt-10 ml-40 flex">
           <button
             className="bg-gradient-to-r from-pink-500 to-blue-500 px-16 py-3 rounded-full text-white text-xl"
             type="submit"
