@@ -17,7 +17,7 @@ export default function App() {
        {/* <CompanyCard /> */}
        <Events />
        <Excom />
-       {/* <Contact /> */}
+       <Contact />
       {/* <Footer /> */}
     </div>
   );

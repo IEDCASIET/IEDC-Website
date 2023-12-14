@@ -77,7 +77,7 @@ export default function Navbar() {
                             Execom
                         </span>
                     </li>
-                    {/* <li className="text-black relative">
+                    <li className="text-black relative">
                         <span
                             className="hover:bg-gradient-to-r hover:from-pink-500 hover:via-white-500 hover:to-blue-500 px-5 py-3 rounded-full hover:text-white"
                             onClick={() => {
@@ -89,7 +89,7 @@ export default function Navbar() {
                         >
                             Contact Us
                         </span>
-                    </li> */}
+                    </li>
                 </ul>
             </div>
         </nav>
