@@ -53,7 +53,7 @@ const Gallery = () => {
 
     </div>
   
-    {/* <Footer /> */}
+    <Footer />
     </section>
   )
 }
