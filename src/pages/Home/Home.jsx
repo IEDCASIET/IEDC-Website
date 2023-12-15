@@ -58,7 +58,7 @@ export default function Home() {
     return (
         <section className=" h-[90vh] home">
             {/* <Navbar/> */}
-            <div className='homebg text-left text-4xl black font-semibold bg-contain bg-no-repeat absolute inset-0' style={{backgroundImage: `url('src/assets/homebgimage.png')`, filter: 'saturate(1)', width:'100vw'}}>
+            <div className='homebg text-left text-4xl black font-semibold bg-contain bg-no-repeat absolute inset-0' style={{backgroundImage: `url('src/assets/homebgimage.png')`, filter: 'saturate(1)', width:'auto'}}>
             <div className="hometextdisplay">
                 <div className="hometextdisplay-1 text-left text-6xl black font-semibold relative mt-80 ml-40" ref={el}>
                     <span></span>
