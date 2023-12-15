@@ -1,0 +1,124 @@
+@media screen and (max-width: 1280px) {
+    .map-container {
+        width:300px !important;
+        height:200px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-logo {
+        height:10rem !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer-left {
+        display:flex;
+        flex-direction:column !important;
+    }
+
+    .footer-logo {
+        height:10rem !important;
+        margin-top:1.5rem !important;
+        margin-left:0rem !important;
+    }
+
+    .footer-left-subcontent {
+        margin-top:15rem !important;
+        margin-left:0rem !important;
+    }
+
+    .footer-mid-contents h2 {
+        margin-left:8rem !important;
+    }
+
+    .footer-mid-contents {
+        margin-top:5rem !important;
+        margin-left:0rem !important;
+    }
+
+    .map-container {
+        width:400px !important;
+        height:300px !important;
+    }
+
+    .footer-right-subcontent-left {
+        margin-top:57rem !important;
+        margin-left:-15rem !important;
+        font-size:0.25rem !important;
+    }
+
+    .footer-right-subcontent-mid {
+        margin-top:55rem !important;
+        margin-left:0rem !important;
+        font-size:0.25rem !important;
+    }
+
+    .footer-right-subcontent-right {
+        margin-top:57rem !important;
+        margin-left:15rem !important;
+        font-size:0.25rem !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .footer-mid-contents h2 {
+        margin-left:8rem !important;
+    }
+
+    .footer-mid-contents ul {
+        margin-left:2rem !important;
+        margin-right:2rem !important;
+    }
+
+    .footer-mid-contents {
+        margin-top:5rem !important;
+        margin-left:0rem !important;
+    }
+
+    .map-container {
+        width:300px !important;
+        height:200px !important;
+    }
+
+    .footer-right-subcontent-left {
+        margin-top:55rem !important;
+        margin-left:0rem !important;
+        font-size:0.25rem !important;
+    }
+
+    .footer-right-subcontent-mid {
+        margin-top:53rem !important;
+        margin-left:0rem !important;
+        font-size:0.25rem !important;
+    }
+
+    .footer-right-subcontent-right {
+        margin-top:57rem !important;
+        margin-left:0rem !important;
+        font-size:0.25rem !important;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .map-container {
+        width:250px !important;
+        height:150px !important;
+    }
+
+    .footer-right-subcontent-left {
+        margin-top:56rem !important;
+    }
+
+    .footer-right-subcontent-mid {
+        margin-top:54rem !important;
+    }
+
+    .footer-right-subcontent-right {
+        margin-top:58rem !important;
+    }
+
+}
