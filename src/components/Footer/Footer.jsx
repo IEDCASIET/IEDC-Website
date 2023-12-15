@@ -61,15 +61,15 @@ const Footer = () => {
             className='map-container'
         ></iframe>
     </div>
-    <div className="footer-right-subcontent-left absolute lg:mt-97 mt-120 ml-20 text-left">
+    {/* <div className="footer-right-subcontent-left absolute lg:mt-97 mt-120 ml-20 text-left">
         <p className="text-base text-gray-500">Made By: Aaron P Laju</p>
-    </div>
+    </div> */}
     <div className="footer-right-subcontent-mid absolute lg:mt-97 mt-120 text-center w-full">
         <p className="text-base text-gray-500">Copyright &copy; 2023 IEDC ASIET</p>
     </div>
-    <div className="footer-right-subcontent-right absolute lg:mt-97 mt-120 sm:right-0 sm:mr-20 sm:text-right text-left">
+    {/* <div className="footer-right-subcontent-right absolute lg:mt-97 mt-120 sm:right-0 sm:mr-20 sm:text-right text-left">
         <p className="text-base text-gray-500">Designed By: Ajin P D</p>
-    </div>
+    </div> */}
 </div>
 
 </section>
