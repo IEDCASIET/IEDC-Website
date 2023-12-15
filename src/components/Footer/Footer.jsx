@@ -9,7 +9,7 @@ const Footer = () => {
     <section className="bg-white-500 text-black h-auto flex flex-col justify-center mt-10">
     {/* <FooterCard /> */}
 
-<div className='footer-left relative flex items-center lg:ml-20'>
+<div className='footer-left relative flex items-center lg:ml-20 xl:ml-0'>
 <img src={logo1} alt="Logo" className="footer-logo h-32 xl:h-40 w-auto 2xl:ml-60 2xl:mb-10 xl:ml-40 xl:mb-24 lg:ml-20 lg:mb-20 ml-40 mb-20 " />
     <div className='footer-left-subcontent absolute 2xl:mt-60 2xl:ml-40 xl:mt-40 xl:ml-20 lg:mt-40 lg:ml-0 ml-20 mt-40'>
         <img src={locImg} alt="loc" className='xl:h-20 h-16 inline' />
