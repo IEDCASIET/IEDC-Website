@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import './Contact.css';
+import contactbgimage from "../../assets/bg_contact_img.png"
 
 const Contact = () => {
 
@@ -53,7 +54,7 @@ const Contact = () => {
   };
 
   var bgcontactimg = {
-    backgroundImage: `url('src/assets/bg_contact_img.png')`,
+    backgroundImage: `url(${contactbgimage})`,
     backgroundSize: '100% 100%',
     backgroundPosition: 'right center',
     opacity: 1, 

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import Navbar from "../../components/Navbar/Navbar";
 import './Home.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/effect-fade';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import image from './HomeData'
+import homebg from '../../assets/homebgimage.png'
 
 export default function Home() {
     const el = useRef(null);
@@ -58,7 +58,7 @@ export default function Home() {
     return (
         <section className=" h-[90vh] home">
             {/* <Navbar/> */}
-            <div className='homebg text-left text-4xl black font-semibold bg-contain bg-no-repeat absolute inset-0' style={{backgroundImage: `url('src/assets/homebgimage.png')`, filter: 'saturate(1)', width:'auto'}}>
+            <div className='homebg text-left text-4xl black font-semibold bg-contain bg-no-repeat absolute inset-0' style={{backgroundImage: `url(${homebg})`, filter: 'saturate(1)', width:'auto'}}>
             <div className="hometextdisplay">
                 <div className="hometextdisplay-1 text-left text-6xl black font-semibold relative mt-80 ml-40" ref={el}>
                     <span></span>
