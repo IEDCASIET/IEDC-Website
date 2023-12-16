@@ -11,6 +11,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Gallery from './pages/Gallery/Gallery';
+import NotFound from './pages/NotFound/NotFound';
+import Contributors from './pages/Contributors/Contributors';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "/gallery",
     element: <Gallery />,
+  },
+  {
+    path: "/contributors",
+    element: <Contributors />,
+  },
+  {
+    path: '*', 
+    element: <NotFound />,
   },
 ]);
 
