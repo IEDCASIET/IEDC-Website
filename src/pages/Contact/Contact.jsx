@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <section id='contact-us' className="bg-white-500 text-black sm:h-screen h-auto flex flex-col justify-center mt-10">
-        <div className="text-contactus text-center sm:mt-0 mt-32">
+        <div className="text-contactus text-center mt-0">
             <h1 className="text-7xl font-medium inline">Contact</h1>&nbsp;&nbsp;&nbsp;&nbsp;
             <h1 className="text-7xl font-semibold inline">Us</h1>
         </div>

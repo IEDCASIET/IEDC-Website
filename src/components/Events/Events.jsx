@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import './Events.css';
 import { Link } from 'react-router-dom';
 import './Events.css';
@@ -40,15 +39,13 @@ export default function Events() {
         ))}
       </div>
       <div className='relative xl:ml-[11rem]'>
-      <Link to="/events" smooth>
       <button
         className="eventsbutton bg-gradient-to-r from-pink-600 to-blue-600 px-10 py-3 rounded-full text-white text-xl relative transform -translate-x-1/2 -translate-y-1/2 block mx-auto mt-8 sm:left-20 md:left-20 lg:left-20 xl:left-0"
-      >
+      ><Link to="/events" smooth>
         View More
+        </Link>
       </button>
-    </Link>
         </div>
-      {/* )} */}
     </section>
   );
 }

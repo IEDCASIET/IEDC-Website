@@ -175,13 +175,8 @@ const Excom = () => {
           <Team key={index} {...item} />
         ))}
       </div>
-      {/* <Card /> */}
     </section>
   );
 };
 
 export default Excom;
-
-{/* <p className="text-xl text-gray-800 tracking-wide leading-5 md:leading-6">Nowar Lal</p>
-                    <p className="text-lg text-purple-500 tracking-wide leading-5 md:leading-6">CEO IEDC ASIET</p>
-                    <p className="text-sm text-gray-500 leading-5 md:leading-6">janedoe@example.com</p> */}

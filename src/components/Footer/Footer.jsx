@@ -1,14 +1,12 @@
 import React from 'react';
 import logo1 from "../../assets/IEDC ASIET Logo.png";
 import locImg from "../../assets/location.png";
-import FooterCard from "./FooterCard";
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <section className="bg-white-500 text-black h-auto flex flex-col justify-center mt-10">
-    {/* <FooterCard /> */}
-
 <div className='footer-left relative flex items-center lg:ml-20 xl:ml-0'>
 <img src={logo1} alt="Logo" className="footer-logo h-32 xl:h-40 w-auto 2xl:ml-60 2xl:mb-10 xl:ml-40 xl:mb-24 lg:ml-20 lg:mb-20 ml-40 mb-20 " />
     <div className='footer-left-subcontent absolute 2xl:mt-60 2xl:ml-40 xl:mt-40 xl:ml-20 lg:mt-40 lg:ml-0 ml-20 mt-40'>
@@ -65,7 +63,9 @@ const Footer = () => {
         <p className="text-base text-gray-500">Made By: Aaron P Laju</p>
     </div> */}
     <div className="footer-right-subcontent-mid absolute lg:mt-97 mt-120 text-center w-full">
-        <p className="text-base text-gray-500">Copyright &copy; 2023 IEDC ASIET</p>
+        <p className="text-base text-gray-500">
+            <Link to='/contributors'>Copyright &copy; 2023 IEDC ASIET</Link>
+        </p>
     </div>
     {/* <div className="footer-right-subcontent-right absolute lg:mt-97 mt-120 sm:right-0 sm:mr-20 sm:text-right text-left">
         <p className="text-base text-gray-500">Designed By: Ajin P D</p>

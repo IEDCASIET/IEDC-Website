@@ -21,7 +21,6 @@ const Gallery = () => {
     <section id='gallery'>
         <EventsNav />
         <div className="text-center mt-0">
-            {/* <h1 className="text-7xl font-medium inline">Our</h1>&nbsp;&nbsp;&nbsp;&nbsp; */}
             <h1 className="text-gallery text-7xl font-semibold">Gallery</h1>
         </div>
         <div className="flex flex-wrap flex-col justify-center gap-20 p-10 mx-auto">
