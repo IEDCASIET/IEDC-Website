@@ -1,0 +1,147 @@
+@media screen and (max-width: 768px) {
+    .footercard-left {
+        height:18rem !important;
+        align-items:center !important;
+        justify-contents:center !important;
+        display:flex !important;
+        flex-direction:column !important;
+        margin-left:0 !important;
+    }
+
+    .footercard-left h2 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+        margin-left:0 !important;
+    }
+
+    .footercard-left button {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: 1.25rem !important;
+        line-height: 1.75rem !important;
+        margin-top:1rem !important;
+    }
+
+    .fb,
+    .insta,
+    .yt,
+    .ld {
+        margin-top:2rem !important;
+        height:4rem !important;
+        left:0 !important;
+    }
+
+    .fb {
+        margin-left:5rem !important;
+    }
+
+    .insta {
+        margin-left:15rem !important;
+    }
+
+    .yt {
+        margin-left:25rem !important;
+    }
+
+    .ld {
+        margin-left:35rem !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footercard-left {
+        height:17rem !important;
+        align-items:center !important;
+        justify-contents:center !important;
+        display:flex !important;
+        flex-direction:column !important;
+        margin-left:0 !important;
+    }
+    .footercard-left h2 {
+        font-size: 1.25rem !important;
+        line-height: 2.5rem !important;
+        margin-left:0 !important;
+    }
+
+    .footercard-left button {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 1rem !important;
+        line-height: 1.75rem !important;
+        margin-top:1rem !important;
+    }
+
+    .fb,
+    .insta,
+    .yt,
+    .ld {
+        margin-top:2rem !important;
+        height:3rem !important;
+        left:0 !important;
+    }
+
+    .fb {
+        margin-left:3rem !important;
+    }
+
+    .insta {
+        margin-left:8rem !important;
+    }
+
+    .yt {
+        margin-left:13rem !important;
+    }
+
+    .ld {
+        margin-left:18rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footercard-left {
+        height:16rem !important;
+        align-items:center !important;
+        justify-contents:center !important;
+        display:flex !important;
+        flex-direction:column !important;
+        margin-left:0 !important;
+    }
+    .footercard-left h2 {
+        font-size: 1rem !important;
+        line-height: 2.5rem !important;
+        margin-left:0 !important;
+    }
+
+    .footercard-left button {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 0.75rem !important;
+        line-height: 1.75rem !important;
+        margin-top:1rem !important;
+    }
+
+    .fb,
+    .insta,
+    .yt,
+    .ld {
+        margin-top:2rem !important;
+        height:2rem !important;
+        left:0 !important;
+    }
+
+    .fb {
+        margin-left:3rem !important;
+    }
+
+    .insta {
+        margin-left:7rem !important;
+    }
+
+    .yt {
+        margin-left:11rem !important;
+    }
+
+    .ld {
+        margin-left:15rem !important;
+    }
+}
