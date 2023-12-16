@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/IEDC ASIET Logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,14 +56,14 @@ export default function Navbar() {
                         </span>
                     </li>
                     <li className="text-black relative">
-                        <a href="/gallery">
+                        <Link to="/gallery">
                             <span
                                 className="hover:bg-gradient-to-r hover:from-pink-500 hover:via-white-500 hover:to-blue-500 px-5 py-3 rounded-full hover:text-white"
                                 style={{ cursor: 'pointer' }}
                             >
                                 Gallery
                             </span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="text-black relative top-0">
                         <span
