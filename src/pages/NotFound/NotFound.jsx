@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../../assets/IEDC ASIET Logo.png";
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
@@ -15,14 +16,14 @@ const NotFound = () => {
         <h2 className='text-2xl sm:ml-0 ml-5 sm:mr-0 mr-5'>Dear Entrepreneur You Are In The Wrong Page</h2>
       </div>
       <button className='mt-10'>
-      <a href="/">
+      <Link to ="/">
         <span
             className="bg-gradient-to-r from-pink-600 to-blue-600 text-white px-5 py-3 rounded-full text-xl"
             style={{ cursor: 'pointer' }}
         >
             Back To Home
         </span>
-      </a>
+      </Link>
       </button>
     </section>
   )
