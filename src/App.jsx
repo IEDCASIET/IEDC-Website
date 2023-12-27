@@ -15,19 +15,19 @@ export default function App() {
     <Router>
       <Routes>
           <Route exact path="/" element={<Pages />} />
-          <Route
+          <Route exact
               path="/events"
               element={<EventsPage />}
           />
-          <Route
+          <Route exact
               path="/gallery"
               element={<Gallery />}
           />
-          <Route
+          <Route exact
               path="/contributors"
               element={<Contributors />}
           />
-          <Route
+          <Route exact
               path="*"
               element={<NotFound />}
           />
