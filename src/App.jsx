@@ -15,7 +15,7 @@ export default function App() {
     <Router>
       <Routes>
           <Route exact path="/" element={<Pages />} />
-          {/* <Route
+          <Route
               path="/events"
               element={<EventsPage />}
           />
@@ -26,7 +26,7 @@ export default function App() {
           <Route
               path="/contributors"
               element={<Contributors />}
-          /> */}
+          />
           <Route
               path="*"
               element={<NotFound />}
