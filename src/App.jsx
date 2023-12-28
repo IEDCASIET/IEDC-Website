@@ -6,24 +6,27 @@ import {
 } from "react-router-dom";
 import Pages from "./Pages";
 import NotFound from './pages/NotFound/NotFound';
-
-// import { Element } from 'react-scroll';
-// import Home from './pages/Home/Home';
-// import About from './pages/About/About';
-// import Events from './components/Events/Events';
-// import Excom from './pages/Excom/Excom';
-// import Contact from './pages/Contact/Contact';
-// import Footer from './components/Footer/Footer';
-// import Navbar from './components/Navbar/Navbar'; 
-// import CompanyCard from './components/Company/Company';
-// import Card from './components/Card/Card';
-// import FooterCard from './components/Footer/FooterCard';
+import Gallery from './pages/Gallery/Gallery';
+import EventsPage from './pages/Events/Events';
+import Contributors from './pages/Contributors/Contributors';
 
 export default function App() {
   return (
     <Router>
       <Routes>
           <Route exact path="/" element={<Pages />} />
+          <Route
+              path="/events"
+              element={<EventsPage />}
+          />
+          <Route
+              path="/gallery"
+              element={<Gallery />}
+          />
+          <Route
+              path="/contributors"
+              element={<Contributors />}
+          />
           <Route
               path="*"
               element={<NotFound />}
@@ -32,20 +35,3 @@ export default function App() {
     </Router>
   );
 }
-
-// export default function App() {
-//   return (
-//     <div>
-//       <Navbar />
-//        <Home />
-//        <About />
-//        <CompanyCard />
-//        <Events />
-//        <Excom />
-//        <Card />
-//        <Contact />
-//        <FooterCard />
-//       <Footer />
-//     </div>
-//   );
-// }

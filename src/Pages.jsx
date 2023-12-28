@@ -1,4 +1,3 @@
-import { Element } from 'react-scroll';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Events from './components/Events/Events';
