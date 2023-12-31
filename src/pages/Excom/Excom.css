@@ -1,0 +1,5 @@
+@media screen and (max-width: 480px) {
+    .execom-text h1 {
+        font-size:3rem !important;
+    }
+}

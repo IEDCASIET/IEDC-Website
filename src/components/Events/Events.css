@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  .eventsbutton{
+    left:5rem
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .events-text h1 {
+    font-size:3rem !important;
+  }
+
+  .eventsbutton{
+    left:5.75rem
+  }
+
+  .home-events-image {
+    width:300px !important;
+    height:300px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .events-text h1 {
+    font-size:3rem !important;
+  }
+
+  .home-events-image {
+    width:200px !important;
+    height:200px !important;
+  }
+}

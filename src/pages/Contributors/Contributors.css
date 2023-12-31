@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+    .text-contributors h1 {
+        font-size:3rem !important;
+    }
+
+    .contributors-images {
+        width:300px !important;
+        height:200px !important;
+    }
+
+    .contributors-sub-text p {
+        font-size:1.45rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-contributors h1 {
+        font-size:2rem !important;
+    }
+
+    .contributors-images {
+        width:300px !important;
+        height:150px !important;
+    }
+
+    .contributors-sub-text p {
+        font-size:1.25rem !important;
+    }
+}

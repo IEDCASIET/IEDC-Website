@@ -1,0 +1,122 @@
+@media screen and (max-width: 992px) {
+    .logo {
+        height:18rem;
+        margin-left:8rem;
+    }
+
+    .desc {
+        font-size:1rem;
+        line-height:1.3rem;
+        width:23rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-2 {
+        flex-direction: column !important;
+        margin-top: 4rem;
+        align-items: center;
+    }
+
+    .logo {
+        height: 18rem;
+        margin-left: 0 !important;
+    }
+
+    .description {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .description h2 {
+        margin-left: 0;
+    }
+
+    .desc {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        width: 100%; 
+        max-width: 25rem;
+        /* margin: 0 auto;  */
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .about-2 {
+        flex-direction: column !important;
+        margin-top: 4rem;
+        /* margin-left:4rem; */
+    }
+
+    .about-2 h2 {
+        font-size:2rem !important;
+    }
+    
+    .about-text {
+        /* margin-left:4rem; */
+    }
+
+    .about-text h1 {
+        font-size:3.5rem !important;
+    }
+
+    .logo {
+        height: 18rem;
+        margin-left: 0 !important;
+    }
+
+    .description {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .description h2 {
+        margin-left: 0;
+    }
+
+    .desc {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        width: 100%; 
+        max-width: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) { 
+    .about-2 {
+        flex-direction: column !important;
+        margin-top: 4rem;
+        align-items: center;
+    }
+    
+    .about-2 h2 {
+        font-size:2rem !important;
+    }
+
+    .about-text h1 {
+        font-size:3rem !important;
+    }
+
+    .logo {
+        height: 18rem;
+        margin-left: 0 !important;
+    }
+
+    .description {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .description h2 {
+        margin-left: 0;
+    }
+
+    .desc {
+        font-size: 0.75rem !important;
+        line-height: 1rem;
+        width: 100%; 
+        max-width: 17rem;
+    }
+}
